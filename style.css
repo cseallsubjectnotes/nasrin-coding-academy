@@ -1,7 +1,6 @@
 body {
     font-family: Arial;
     margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -22,21 +21,29 @@ section {
 }
 
 #home {
-    background: #f4f4f4;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: white;
 }
 
 button {
     padding: 10px 20px;
-    background: #4a00e0;
-    color: white;
+    background: white;
+    color: #4a00e0;
     border: none;
     cursor: pointer;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px;
 }
 
 .card {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer {
