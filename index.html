@@ -13,100 +13,69 @@
     <h1>Nasrin Coding Academy</h1>
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#videos">Videos</a>
+        <a href="#learn">What You'll Learn</a>
+        <a href="#content">Course Content</a>
+        <a href="#videos">Preview</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- HOME -->
-<section id="home">
-    <h2>Become a Job-Ready Developer 🚀</h2>
-    <p>Learn iOS, Flutter & Programming from Scratch</p>
-    <button onclick="scrollToContact()">Join Now</button>
+<!-- HERO -->
+<section id="home" class="hero">
+    <h2>📱 iOS Development Course</h2>
+    <p>Become a Job-Ready iOS Developer 🚀</p>
+    <button onclick="scrollToContact()">Enroll Now</button>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>👩‍🏫 About Me</h2>
-
-    <img src="profile.jpg" class="profile-img">
-
-    <p>
-    I am a Software Developer with 10+ years of experience in the IT industry.
-    I specialize in mobile app development (iOS & Flutter), backend, and automation testing.
-    </p>
-
-    <p>
-    I teach C, C++, Python, Java, Swift, Flutter, Xcode, and Playwright Automation Testing.
-    </p>
-
-    <p>
-    💡 My focus is on real-time projects, strong fundamentals, and job-oriented training.
-    </p>
+<!-- WHAT YOU’LL LEARN -->
+<section id="learn">
+    <h2>📘 What You’ll Learn</h2>
+    <ul>
+        <li>✔ iOS Architecture & Layers</li>
+        <li>✔ Swift Programming Basics</li>
+        <li>✔ Xcode & Interface Builder</li>
+        <li>✔ Build Real Apps</li>
+        <li>✔ API Integration</li>
+    </ul>
 </section>
 
-<!-- COURSES -->
-<section id="courses">
-    <h2>📚 Courses</h2>
+<!-- COURSE CONTENT -->
+<section id="content">
+    <h2>📂 Course Content</h2>
 
-    <div class="card">
-        <h3>C Programming</h3>
-        <p>Learn basics to advanced concepts</p>
+    <div class="content-card">
+        <h3>Module 1: iOS Architecture</h3>
+        <p>Core OS, Core Services, Media, Cocoa Touch</p>
     </div>
 
-    <div class="card">
-        <h3>Python Programming</h3>
-        <p>Real-time examples and projects</p>
+    <div class="content-card">
+        <h3>Module 2: Introduction to iOS</h3>
+        <p>Overview, Objective-C, Xcode Basics</p>
     </div>
 
-    <div class="card">
-        <h3>Swift & Objective-C</h3>
-        <p>iOS app development</p>
-    </div>
-
-    <div class="card">
-        <h3>Flutter Development</h3>
-        <p>Build Android & iOS apps</p>
-    </div>
-
-    <div class="card">
-        <h3>Playwright Testing</h3>
-        <p>Automation using JS / TS / Python</p>
+    <div class="content-card">
+        <h3>Module 3: First App</h3>
+        <p>Create Hello World App</p>
     </div>
 </section>
 
-<!-- VIDEOS -->
+<!-- VIDEO PREVIEW -->
 <section id="videos">
-    <h2>🎥 iOS Development Course</h2>
+    <h2>🎥 Course Preview</h2>
 
-    <!-- Module 1 -->
-    <div class="video-card">
-        <h3>📦 Module 1: iOS Architecture & Layers</h3>
-        <iframe width="100%" height="300"
-        src="https://www.youtube.com/embed/q-85HjGpsPM"
-        frameborder="0" allowfullscreen></iframe>
+    <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/q-85HjGpsPM" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/q-85HjGpsPM" allowfullscreen></iframe>
     </div>
-
-    <!-- <!-- Module 2 -->
-    <div class="video-card">
-        <h3>🚀 Module 2: Introduction to iOS Development</h3>
-        <iframe width="100%" height="300"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <!-- Module 3 -->
-    <div class="video-card">
-        <h3>🛠️ Module 3: Xcode & First App</h3>
-        <iframe width="100%" height="300"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0" allowfullscreen></iframe>
-    </div> -->
-
 </section>
-    
+
+<!-- INSTRUCTOR -->
+<section id="instructor">
+    <h2>👩‍🏫 Instructor</h2>
+    <img src="profile.jpg" class="profile-img">
+    <p>10+ years experience in iOS & Flutter development.</p>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
     <h2>📞 Contact</h2>
@@ -118,6 +87,11 @@
     <p>© 2026 Nasrin Coding Academy</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
 </body>
 </html>
